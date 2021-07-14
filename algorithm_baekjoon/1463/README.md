@@ -22,10 +22,11 @@ if문에서 elif를 사용하지 않은 이유는 elif를 사용하면 2로 나�
 
 
 ### 소스코드
+
 '''python
 n = int(input())
 count = [0 for _ in range(n+1)]
-# count = [0] * (n+1)
+'''count = [0] * (n+1)'''
 
 for i in range(2, n+1):
     count[i] = count[i-1] + 1
