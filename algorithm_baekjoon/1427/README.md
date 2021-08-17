@@ -7,13 +7,20 @@
 
 출력: 첫째 줄에 자리수를 내림차순으로 정렬한 수를 출력한다.
 ```
+
 ## 풀이
 ```python
 # 1
 for i in str(n):
     nlist.append(int(i))
+
+# 반복문 대신 사용
+nlist = list(map(int,str(n)) # map함수로 문자열 하나씩을 자르기 때문에 반복문 대신 사용 가능
 ```
+
 첫 반복문에서 범위를 문자형으로 입력받아야 한다.(int형으로 받으면 object is no iterable)
+
+또는 map 함수를 이용하여 반복문 대신 리스트로 넣어주어도 된다.
 
 ```python
 # 2
